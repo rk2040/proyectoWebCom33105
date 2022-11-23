@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;900&family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Overpass:wght@100;200;300;400;500;600;700;800&family=Pridi:wght@300;400;500;600;700&display=swap');
+
+/*  Colores logo para la pagina
+    casiNegro   #2F2F3C
+    blanco      #FFFFFF
+    naranja     #FF6600
+*/
+
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+/* Font size: 10px = 1em */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(../assets/img/background/patitasYcorazones02.svg);
+
+}
+
+h1, h2, h3{
+    color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+h1{
+    font-size: 6em;
+    color: #FF6600;
+}
+h2{
+    font-size: 3em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+h3{
+    font-size: 2.5em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+/* Separadores */
+.grid-main hr{
+    background-color: blueviolet;
+    opacity: .8;
+    height: 1em;
+    width: 75%;
+    border-radius: 50%;
+    margin: 20px auto 20px auto;
+}
+/* ---------- Inicio del header ---------- */
+header{
+    background-color: #FF6600;
+    opacity: .8;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-top: 10px;
+    width: 100%;
+}
+.logoNav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 15em;
+}
+/* animacion */
+.logoNav{
+    transition-property: all;
+}
+.logoNav{
+    transition-property: all;
+    animation: agranda-logo 1s ;
+}
+@keyframes agranda-logo{
+    0%{
+        opacity: 0.0;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        transform: rotate(-360deg);
+        opacity: 1;
+    }
+}
+.logoNav:hover{
+    transition-property: all;
+    transition-duration: 1s;
+    transform: scale(1.1);
+}
+.navbar a{
+    transition-property: all;
+    border-radius: 30%;
+}
+.navbar a:hover{
+    animation: agranda-nav 1s ;
+}
+@keyframes agranda-nav{
+    50%{
+        background-color: blueviolet;
+        opacity: 0.6;
+    }
+}
+.navbar a:hover{
+    transition-property: all;
+    transition-duration: 1s;
+    transform: scale(1.3);
+}
+/* Fin animacion */
+
+.texto-logo{
+    color: #2F2F3C;
+    font-size: 6em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header nav{
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container-fluid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav ul li{
+    font-size: medium;
+    list-style-type: none;
+    padding: 5px;
+}
+/* ---------- Fin del header ---------- */
+
+/* ---------- Inicio del main ---------- */
+.grid-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: small;
+    font-weight: 300;
+    width: auto;
+    margin: 10px;
+}
+.carrousel{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+.img{
+    max-width: 100%;
+}
+.carousel-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.video-home iframe{
+    max-width: 100%;
+    padding: 10px;
+}
+
+/* ---------- Fin del main ---------- */
+
+/* ---------- Inicio del footer ---------- */
+footer{
+    background-color: #FF6600;
+    opacity: .8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+.nav-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.redes-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.redes svg{
+    margin-top: 10px;
+}
+.grid-footer label{
+    font-size: large;
+}
+.derechos{
+    font-size: medium;
+}
+a{
+    color: #2F2F3C;
+    text-decoration: none;
+}
+/* ---------- Fin del footer ---------- */
+
+/* --------- Pagina Productos --------- */
+.grid-main-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    max-width: auto;
+}
+.articulo{
+    max-width: 20em;
+    margin: 40px 10px 40px 10px;
+    flex-wrap: wrap;
+}
+.grid-main-productos h1{
+    margin-bottom: 100px;
+}
+.grid-main-productos p{
+    font-size: 2em;
+    margin: 5px;
+}
+.grid-main-productos img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 30%;
+    border: #2F2F3C solid 5px;
+}
+.imgProductos{
+    width: 100%;
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 90px;
+}
+.cantidad{
+    width: 3em;
+    height: auto;
+    font-size: 2em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+ }
+ 
+.botonComprar{
+    width: 5em;
+    height: auto;
+    height: auto;
+    font-size: 2em;
+}
+.botonComprar:hover{
+    color: #FFFFFF;
+    background-color: #2F2F3C;
+}
+/* --------- Fin Pagina Productos --------- */
+
+/* ---------- Inicio a declarar las grid area ----------*/
+header{
+    grid-area: header;
+}
+.logoNav{
+    grid-area: logoNav;
+}
+.texto-logo{
+    grid-area: texto-logo;
+}
+.navbar{
+    grid-area: navbar;
+}
+.contenido-main{
+    grid-area: contenido-main;
+}
+.grid-main{
+    grid-area: grid-main;
+}
+.titulo-main{
+    grid-area: titulo-main;
+}
+.carrousel{
+    grid-area: carrousel;
+}
+
+.video-home{
+    grid-area: video-home;
+}
+hr{
+    grid-area: separador;
+}
+.grid-footer{
+    grid-area: grid-footer;
+}
+.nav-footer{
+    grid-area: nav-footer;
+}
+.redes{
+    grid-area: redes;
+}
+.derechos{
+    grid-area: derechos;
+}
+/* grid areas de cuidados */
+
+.grid-main-mascotas{
+    grid-area: grid-main-mascotas;
+}
+/* grid areas de productos */
+
+.grid-main-productos{
+    grid-area: grid-main-productos;
+}
+.imgProductos{
+    grid-area: img-productos;
+}
+.titulo-productos{
+    grid-area: titulo-productos;
+}
+.imgProductos .articulo{
+    grid-area: articulo;
+}
+.datosArticulo{
+    grid-area: datos-articulo;
+}
+/* ---------- Fin declararacion de las grid area ----------*/
+
+/* ---------- Inicio con la grilla area ----------*/
+/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
+/* Inicio header y footer para todos los html */
+.grid-header{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+    grid-template-areas:
+    "logoNav"
+    "texto-logo"
+    "navbar";
+}
+.grid-footer{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    grid-template-areas:
+    "grid-footer"
+    "redes"
+    "derechos";
+}
+/* Fin header y footer para todos los html */
+
+/* Inicio para html index */
+.grid-main{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas:
+    "titulo-main"
+    "carrousel"
+    "separador"
+    "video-home"
+    "video-home";
+}
+/* Fin para html index */
+/* ---------- Fin de la grilla area ----------*/
+
+/* ---------- Inicio de mediaQueries ---------- */
+/* Celulares y tabletas chicas de 576 a 767px */
+/* Inicio para html index */
+@media(min-width: 576px){
+    p{
+        font-size: medium;
+        font-weight: 500;
+    }
+    .carrousel p{
+        margin: 10px 60px 10px 60px;
+    }
+    .nav-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /* Fin para html index */
+
+    /* Inicio para html cuidados */
+    .grid-main-mascotas p{
+        margin: 10px 60px 10px 60px;
+    }
+    /* Fin para html cuidados */
+
+    /* Inicio para html nosotros */
+    .grid-main-nosotros p{
+        margin: 10px 60px 10px 60px;
+    }
+    /* Fin para html nosotros */
+
+    /* Inicio para html productos */
+    .imgProductos{
+        width: 90%;
+    }
+    /* Fin para html productos */
+}
+
+/* Tablet de 10" 768 a 1023px */
+/* Inicio para html index */
+@media(min-width: 768px){
+    .grid-header{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 5px;
+        justify-content: space-around;
+        align-items:flex-end;
+        grid-template-areas:
+        ".    texto-logo  ."
+        "logoNav    navbar      .";
+    }
+    p{
+        font-weight: 600;
+    }
+    /* Fin para html index */
+
+    /* Inicio para html productos */
+    .imgProductos{
+        width: 80%;
+    }
+    /* Fin para html productos */
+}
+
+
+/* Notebook y Pc de escritorio 1024px en adelante */
+@media(min-width: 1024px){
+    p{
+        font-size: large;
+    }
+
+    /* Inicio para html productos */
+    .imgProductos{
+        width: 70%;
+    }
+    /* Fin para html productos */
+}
+/* ---------- Fin de mediaQueries ---------- */
